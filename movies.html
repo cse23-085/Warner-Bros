@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+     .movies-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Sets exactly 4 columns */
+    grid-auto-rows: minmax(300px, auto); /* Sets minimum row height, auto adjusts based on content */
+    gap: 10px; /* Spacing between grid items */
+    padding: 10px; /* Padding around the entire grid container */
+    margin: 0 auto; /* Centering the grid horizontally */
+    max-width: 1200px; /* Optional: Limits the maximum width of the grid container */
+    margin-bottom: 20px;
+}
+
+.movie {
+    background-color: lightblue; /* Sets the background color to light blue */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Sets the border-radius to 10px */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Corrected the rgba syntax */
+    display: flex; /* Ensures that the content inside each grid item is flexibly managed */
+    flex-direction: column; /* Stacks content vertically */
+    align-items: center; /* Centers content horizontally */
+}
+
+.movie img {
+    width: 100%; /* Makes the image take full width of its container */
+    height: 350px; /* Fixed height as specified */
+    object-fit: cover; /* Ensures the images cover the designated area without distorting */
+    cursor: pointer; /* Maintains the cursor as pointer when hovered */
+    border-radius: 10px;
+}
+
+.movie-title {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    cursor: pointer; /* Ensures that the title is also clickable */
+    text-decoration: none;
+}
+
+
+            /* Add styles for large screens */
+    @media (min-width: 768px) {
+        .footer .social-icons {
+            text-align: right; /* Aligns the social icons to the right */
+        }
+        .footer .copyright {
+            text-align: left; /* Aligns the copyright text to the left */
+        }
+    }
+    
+    /* Add styles for smaller screens */
+    @media (max-width: 767px) {
+        .footer .social-icons,
+        .footer .container {
+            text-align: center; /* Centers everything for small screens */
+        }
+        .footer .social-icons {
+            padding-top: 20px; /* Adds space above the social icons */
+        }
+    }
+    
+    /* Spacing between social icons */
+    .footer i {
+        margin: 0 7px; /* Adds horizontal space between icons */
+        font-size: 20px;
+    }
+
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light" style="background-color: gray;">
+            <a class="navbar-brand" href="#">
+                <img src="wb-logo.jpg" alt="Warner Bros" style="width:100px;height:100px; border-radius: 10px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav" style="font-weight: bold;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movies.html">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tvshows.html">TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="games.html">Games & Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="collections.html">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2 style="text-align: center;">Movies</h2>
+        <div class="movies-container">
+            <a class="movie" href="https://youtu.be/GsmeAUiRqBE?si=tiR1qIUI4FbXXa7h" target="_blank">
+                <img src="inception.jpg" alt="Inception">
+                <div class="movie-title">Inception</div>
+            </a>
+            <a class="movie" href="https://www.netflix.com/title/81564866" target="_blank">
+                <img src="rest.jpg" alt="rest in peace">
+                <div class="movie-title">Rest In Peace 2024</div>
+            </a>
+            <a class="movie" href="https://www.netflix.com/bw/title/81680788" target="_blank">
+                <img src="sisu.jpg" alt="sisu">
+                <div class="movie-title">Sisu</div>
+            </a>
+            <a class="movie" href="https://www.goojara.to/mDJDn2" target="_blank">
+                <img src="road.jpg" alt="Road House">
+                <div class="movie-title">Road house</div>
+            </a>
+            <a class="movie" href="https://www.goojara.to/mLRzxj" target="_blank">
+                <img src="madame.jpg" alt="madame web">
+                <div class="movie-title">Madame web 2024</div>
+            </a>
+            <a class="movie" href="https://www.netflix.com/bw/title/81464239" target="_blank">
+                <img src="moon.jpg" alt="Rebel moon">
+                <div class="movie-title">Rebel Moon</div>
+            </a>
+            <a class="movie" href="https://www.netflix.com/bw/title/81520516" target="_blank">
+                <img src="65.jpg" alt="65">
+                <div class="movie-title">65</div>
+            </a>
+            <a class="movie" href="https://youtu.be/QykFml86l-w?si=VUhqoV3yDnOPNWno" target="_blank">
+                <img src="john.jpg" alt="John Wick">
+                <div class="movie-title">John Wick 4</div>
+            </a>
+            <a class="movie" href="https://www.netflix.com/bw/title/80230399" target="_blank">
+                <img src="extraction.jpg" alt="extraction">
+                <div class="movie-title">Extraction</div>
+            </a>
+            <a class="movie" href="https://www.netflix.com/bw/title/81098494" target="_blank">
+                <img src="2.jpg" alt="extraction 2">
+                <div class="movie-title">Extraction 2</div>
+            </a>
+            <a class="movie" href="https://www.goojara.to/mjPGRe" target="_blank">
+                <img src="damsel.jpg" alt="damsel">
+                <div class="movie-title">Damsel 2024</div>
+            </a>
+            <a class="movie" href="https://ww1.goojara.to/myPJvw" target="_blank">
+                <img src="scoop.jpg" alt="scoop">
+                <div class="movie-title">Scoop</div>
+            </a>
+            <!-- Repeat for all movies with correct links -->
+        </div>
+    </main>
+
+    <footer class="footer text-dark" style="background-color: gray; height: 60px; padding-top: 18px; ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-md-left text-center">
+                    <p>&copy; 2024 Warner Bros Entertainment Inc. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-right text-center">
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://gmail.com"><i class="fab fa-google"></i></a>
+                        <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Styling for the form */
+         form {
+            margin: auto;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            width: 300px;
+            margin-top: 25px;
+            margin-bottom: 100px;
+            opacity: 1;
+        }
+
+        /* Form inputs and labels */
+        label, input, textarea, button {
+            display: block;
+            width: 100%;
+            box-sizing: border-box; /* Includes padding and border in width */
+        }
+
+        label {
+            margin-bottom: 5px;
+            color: #666666;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical; /* Allows vertical resizing */
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+            align-items: center;
+            margin-top: 10px;
+            border-radius: 4px;
+            border: solid 1.5px rgb(0, 0, 0);
+            
+        }
+
+        button:hover {
+            background-color: #1900ff;
+        }
+        /* Footer styling */
+
+        /* Add styles for large screens */
+@media (min-width: 768px) {
+    .footer .social-icons {
+        text-align: right; /* Aligns the social icons to the right */
+        margin-right: 50px;
+    }
+    .footer .copyright {
+        text-align: left; /* Aligns the copyright text to the left */
+    }
+}
+
+/* Add styles for smaller screens */
+@media (max-width: 767px) {
+    .footer .social-icons,
+    .footer .container {
+        text-align: center; /* Centers everything for small screens */
+    }
+    .footer .social-icons {
+        padding-top: 20px; /* Adds space above the social icons */
+    }
+}
+
+/* Spacing between social icons */
+.footer i {
+    margin: 0 7px; /* Adds horizontal space between icons */
+    font-size: 20px;
+}
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light" style="background-color: gray;">
+            <a class="navbar-brand" href="#">
+                <img src="wb-logo.jpg" alt="Warner Bros" style="width:100px;height:100px; border-radius: 10px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav" style="font-weight: bold;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movies.html">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tvshows.html">TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="games.html">Games & Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="collections.html">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li> 
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="text-align: center;">Send us your feedback</h1>
+        <form id="feedback-form">
+            <label for="user_name">Name:</label>
+            <input type="text" id="user_name" name="user_name" required>
+            <label for="user_email">Email:</label>
+            <input type="email" id="user_email" name="user_email" required>
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+            <button type="submit" style="border-radius: 7px; margin-top: 7px;">Send Feedback</button>
+        </form>
+    </main>
+
+    <footer class="footer text-dark " style="background-color: gray; height: 60px; padding-top: 18px; ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-md-left text-center">
+                    <p>&copy; 2024 Warner Bros Entertainment Inc. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-right text-center">
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://gmail.com"><i class="fab fa-google"></i></a>
+                        <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

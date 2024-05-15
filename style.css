@@ -1,0 +1,49 @@
+/* Styles for large screens */
+    @media (min-width: 768px) {
+        .footer .social-icons {
+            text-align: right; /* Aligns the social icons to the right */
+        }
+        .footer .copyright {
+            text-align: left; /* Aligns the copyright text to the left */
+        }
+        .movies-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Creates four columns */
+            gap: 20px; /* Adds space between the grid items */
+        }
+    }
+    
+    /* Styles for smaller screens */
+    @media (max-width: 767px) {
+        .footer .social-icons,
+        .footer .container {
+            text-align: center; /* Centers everything for small screens */
+        }
+        .footer .social-icons {
+            padding-top: 20px; /* Adds space above the social icons */
+        }
+        .movies-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Creates two columns for smaller screens */
+            gap: 10px; /* Smaller gap for smaller screens */
+        }
+    }
+
+    /* Universal styles */
+    .footer i {
+        margin: 0 7px; /* Adds horizontal space between icons */
+        font-size: 20px; /* Icon size */
+    }
+    .movie {
+        display: block;
+        text-align: center; /* Centers content of each movie */
+    }
+    .movie img {
+        width: 100%; /* Ensures images take full width of the grid column */
+        height: auto; /* Keeps image aspect ratio intact */
+    }
+    .movie-title {
+        margin-top: 5px; /* Space between the image and the title */
+    }
+
+

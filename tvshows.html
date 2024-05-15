@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+      .tv-shows-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-gap: 20px; /* Spacing between grid items */
+    margin: 0 auto; /* Centering the grid horizontally */
+    padding: 20px;
+    max-width: 1200px; /* Max width of the container */
+}
+
+.tv-show {
+    background-color: lightblue;
+    border-radius: 8px;
+    overflow: hidden; /* Keeps everything inside the border radius */
+    display: flex;
+    flex-direction: column; /* Stacks image and title vertically */
+    align-items: center; /* Aligns items in the center horizontally */
+}
+
+.tv-show img {
+    width: 100%; /* Makes image take full width of its container */
+    height: 350px; /* Fixed height for all images */
+    display: cover; /* Ensures the images cover the area without distorting */
+    border-radius: 7px;
+}
+
+.tv-show-title {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #000;
+    padding: 10px 5px; /* Padding inside the title area */
+}
+
+@media (max-width: 991px) {
+    .tv-shows-container {
+        grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 575px) {
+    .tv-shows-container {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+
+
+
+    /* Add styles for large screens */
+    @media (min-width: 768px) {
+        .footer .social-icons {
+            text-align: right; /* Aligns the social icons to the right */
+        }
+        .footer .copyright {
+            text-align: left; /* Aligns the copyright text to the left */
+        }
+    }
+    
+    /* Add styles for smaller screens */
+    @media (max-width: 767px) {
+        .footer .social-icons,
+        .footer .container {
+            text-align: center; /* Centers everything for small screens */
+        }
+        .footer .social-icons {
+            padding-top: 20px; /* Adds space above the social icons */
+        }
+    }
+    
+    /* Spacing between social icons */
+    .footer i {
+        margin: 0 7px; /* Adds horizontal space between icons */
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light" style="background-color: gray;">
+            <a class="navbar-brand" href="#">
+                <img src="wb-logo.jpg" alt="Warner Bros" style="width:100px;height:100px; border-radius: 10px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav" style="font-weight: bold;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movies.html">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tvshows.html">TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="games.html">Games & Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="collections.html">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <main>
+            <h3 style="text-align: center;">TV Shows</h3>
+            <div class="tv-shows-container">
+                <!-- Example of TV show entry -->
+                <div class="tv-show">
+                    <img src="iron.jpg" alt="iron reign">
+                    <div class="tv-show-title">
+                        <a href="https://www.netflix.com/title/81438160" target="_blank">Iron Reign(2024)</a>
+                    </div>
+                </div>
+    
+                <!-- Add more TV shows following the example above. Each TV show should have a unique image, title, and link to the streaming platform. -->
+                <!-- Dummy entries are placeholders for actual content. -->
+                <div class="tv-show">
+                    <img src="fall.jpeg" alt="The Fall of the House of Usher (2023) ">
+                    <div class="tv-show-title">
+                        <a href="https://www.netflix.com/watch/81416384?trackId=255824129" target="_blank">The Fall of the House of Usher (2023) </a>
+                    </div>
+                </div>            <div class="tv-show">
+                    <img src="beef.jpg" alt="BEEF">
+                    <div class="tv-show-title">
+                        <a href="https://www.netflix.com/watch/81497204?trackId=255824129" target="_blank">BEEF</a>
+                    </div>
+                </div>
+                <div class="tv-show">
+                    <img src="ninja.jpg" alt="House of Ninjas">
+                    <div class="tv-show-title">
+                        <a href="https://www.netflix.com/title/81465102" target="_blank">House of Ninjas</a>
+                    </div>
+                </div>
+                <div class="tv-show">
+                    <img src="signal.jpg" alt="The Signal">
+                    <div class="tv-show-title">
+                        <a href="https://www.netflix.com/title/81441400" target="_blank">The Signal</a>
+                    </div>
+                </div>
+                <div class="tv-show">
+                    <img src="avatar.jpg" alt="Avatar The Last Airbender">
+                    <div class="tv-show-title">
+                        <a href="hhttps://www.netflix.com/search?q=Avatar%3A The Last Airbender&jbv=80237957" target="_blank">Avatar The Last Airbender</a>
+                    </div>
+                </div>
+                <div class="tv-show">
+                    <img src="3.jpg" alt="3 Body Problem">
+                    <div class="tv-show-title">
+                        <a href="https://www.netflix.com/cz-en/title/81024821" target="_blank">3 Body Problem</a>
+                    </div>
+                </div>
+                <div class="tv-show">
+                    <img src="gentlemen.jpg" alt="The Gentlemen">
+                    <div class="tv-show-title">
+                        <a href="https://www.netflix.com/watch/81646429?trackId=255824129" target="_blank">The Gentlemen</a>
+                    </div>
+            </div>
+    </main>
+
+    <footer class="footer text-dark" style="background-color: gray; height: 60px; padding-top: 18px; ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-md-left text-center">
+                    <p>&copy; 2024 Warner Bros Entertainment Inc. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-right text-center">
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://gmail.com"><i class="fab fa-google"></i></a>
+                        <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

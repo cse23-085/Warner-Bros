@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+
+        .grid {
+            display: grid;
+            gap: 10px; /* Spacing between items */
+        }
+
+        .games-grid {
+            grid-template-columns: repeat(2, 1fr); /* 2 columns for games */
+        }
+
+        .apps-grid {
+            grid-template-columns: repeat(2, 1fr); /* 2 columns for apps */
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+        }
+
+        .item img {
+            width: 65px; /* Fixed size for images */
+            height: 65px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #000000;
+            text-align: center;
+            
+        }
+
+            /* Add styles for large screens */
+    @media (min-width: 768px) {
+        .footer .social-icons {
+            text-align: right; /* Aligns the social icons to the right */
+           
+        }
+        .footer .copyright {
+            text-align: left; /* Aligns the copyright text to the left */
+          
+        }
+    }
+    
+    /* Add styles for smaller screens */
+    @media (max-width: 767px) {
+        .footer .social-icons,
+        .footer .container {
+            text-align: center; /* Centers everything for small screens */
+        }
+        .footer .social-icons {
+            padding-top: 20px; /* Adds space above the social icons */
+        }
+    }
+    
+    /* Spacing between social icons */
+    .footer i {
+        margin: 0 7px; /* Adds horizontal space between icons */
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light " style="background-color: gray;">
+            <a class="navbar-brand" href="#">
+                <img src="wb-logo.jpg" alt="Warner Bros" style="width:100px;height:100px; border-radius: 10px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav" style="font-weight: bold;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movies.html">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tvshows.html">TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="games.html">Games & Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="collections.html">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container"> 
+
+            <h2>Games</h2>
+            
+            <div class="grid games-grid">
+                <!-- Games -->
+                <div class="item">
+                    <img src="minecraft.jpg" alt="Minecraft Launcher">
+                    <a href="https://www.microsoft.com/store/productId/9PGW18NPBZV5?ocid=pdpshare" target="_blank">Minecraft Launcher</a>
+                </div>
+                <div class="item">
+                    <img src="mortal.jpeg" alt="Mortal Combat 11">
+                    <a href="https://www.microsoft.com/store/productId/BTC0L0BW6LWC?ocid=pdpshare" target="_blank">Mortal Combat 11</a>
+                </div>
+                <div class="item">
+                    <img src="sea.jpeg" alt="Sea Of Thieves">
+                    <a href="https://www.microsoft.com/store/productId/9P2N57MC619K?ocid=pdpshare" target="_blank">Sea Of Thieves</a>
+                </div>
+                <div class="item">
+                    <img src="gears.jpeg" alt="Gears 5">
+                    <a href="https://www.microsoft.com/store/productId/C2KDNLT2H7DM?ocid=pdpshare" target="_blank">Gears 5</a>
+                </div>
+                <div class="item">
+                    <img src="dr.jpg" alt="DR. Parking 4">
+                    <a href="https://play.google.com/store/apps/details?id=com.ansangha.drparking4&pcampaignid=web_share" target="_blank">DR. Parking 4</a>
+                </div>
+                <div class="item">
+                    <img src="destiny.jpeg" alt="Destiny 2">
+                    <a href="https://www.microsoft.com/store/productId/9P9WJ5FW0GTD?ocid=pdpshare" target="_blank">Destiny 2</a>
+                </div>
+                <div class="item">
+                    <img src="cover.jpeg" alt="Cover Fire">
+                    <a href="https://play.google.com/store/apps/details?id=com.generagames.resistance&pcampaignid=web_share" target="_blank">Cover Fire</a>
+                </div>
+                <div class="item">
+                    <img src="rush.jpeg" alt="Rush Rally">
+                    <a href="https://play.google.com/store/apps/details?id=brownmonster.app.game.rushrally3&pcampaignid=web_share" target="_blank">Rush Rally 3</a>
+                </div>
+                <div class="item">
+                    <img src="chess.jpeg" alt="Chess">
+                    <a href="https://play.google.com/store/apps/details?id=com.jetstartgames.chess&pcampaignid=web_share" target="_blank">Chess</a>
+                </div>
+                <div class="item">
+                    <img src="real.jpeg" alt="Real Racing 3">
+                    <a href="https://play.google.com/store/apps/details?id=com.ea.games.r3_na&pcampaignid=web_share" target="_blank">Real Racing 3</a>
+                </div>
+            </div>
+    
+            <h2>Apps</h2>
+            <div class="grid apps-grid">
+                <!-- Apps -->
+                <div class="item">
+                    <img src="map.jpeg" alt="Google Maps">
+                    <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.maps&pcampaignid=web_share" target="_blank">Google Maps</a>
+                </div>
+                <div class="item">
+                    <img src="spotify.jpeg" alt="Spotify">
+                    <a href="https://play.google.com/store/apps/details?id=com.spotify.music&pcampaignid=web_share" target="_blank">Spotify</a>
+                </div>
+                <div class="item">
+                    <img src="whatsapp.png" alt="WhatsApp">
+                    <a href="https://play.google.com/store/apps/details?id=com.whatsapp&pcampaignid=web_share" target="_blank">WhatsApp</a>
+                </div>
+                <div class="item">
+                    <img src="Instagram.png" alt="Instagram">
+                    <a href="hhttps://play.google.com/store/apps/details?id=com.instagram.android&pcampaignid=web_share" target="_blank">Instagram</a>
+                </div>
+                <div class="item">
+                    <img src="zoom.png" alt="Zoom">
+                    <a href="https://play.google.com/store/apps/details?id=us.zoom.videomeetings&pcampaignid=web_share" target="_blank">Zoom</a>
+                </div>
+                <div class="item">
+                    <img src="netflix.png" alt="Netflix">
+                    <a href="https://www.microsoft.com/store/productId/9WZDNCRFJ3TJ?ocid=pdpshare" target="_blank">Netflix</a>
+                </div>
+                <div class="item">
+                    <img src="facebook.png" alt="Facebook">
+                    <a href="https://www.microsoft.com/store/productId/9WZDNCRFJ2WL?ocid=pdpshare" target="_blank">Facebook</a>
+                </div>
+                <div class="item">
+                    <img src="teams.jpeg" alt="Microsoft Teams">
+                    <a href="https://apps.microsoft.com/store/detail/XP8BT8DW290MPQ?ocid=pdpshare" target="_blank">Microsoft Teams</a>
+                </div>
+                <div class="item">
+                    <img src="twitter.png" alt="Twitter">
+                    <a href="https://www.microsoft.com/store/productId/9WZDNCRFJ140?ocid=pdpshare" target="_blank">Twitter</a>
+                </div>
+                <div class="item">
+                    <img src="slack.jpeg" alt="Slack">
+                    <a href="https://www.microsoft.com/store/productId/9WZDNCRDK3WP?ocid=pdpshare" target="_blank">Slack</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer text-dark" style="background-color: gray; height: 60px; padding-top: 18px; ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-md-left text-center">
+                    <p>&copy; 2024 Warner Bros Entertainment Inc. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-right text-center">
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://gmail.com"><i class="fab fa-google"></i></a>
+                        <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
